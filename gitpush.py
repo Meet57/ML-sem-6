@@ -4,7 +4,12 @@ from datetime import date
 
 os.system('git add .')
 
-s = 'git commit -m ' + str(date.today())
+st = input("Commit name : ")
+
+if st=='':
+    st = str(date.today())
+
+s = 'git commit -m ' + st
 
 os.system(s)
 
