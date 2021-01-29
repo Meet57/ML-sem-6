@@ -4,7 +4,7 @@ from datetime import date
 
 os.system('git add .')
 
-st = input("Commit name : ")
+st = input("Commit name (dont use space) : ")
 
 if st=='':
     st = str(date.today())
